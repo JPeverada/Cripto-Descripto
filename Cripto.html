@@ -1,0 +1,164 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Criptografia com Números Romanos</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            background-color: slategray;
+            margin: 0;
+            padding: 0;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            height: 100vh;
+            background-image: url("data:image/svg+xml,%3csvg xmlns='http://www.w3.org/2000/svg' version='1.1' xmlns:xlink='http://www.w3.org/1999/xlink' xmlns:svgjs='http://svgjs.dev/svgjs' width='1920' height='1080' preserveAspectRatio='none' viewBox='0 0 1920 1080'%3e%3cg mask='url(%26quot%3b%23SvgjsMask1078%26quot%3b)' fill='none'%3e%3crect width='1920' height='1080' x='0' y='0' fill='%230e2a47'%3e%3c/rect%3e%3cpath d='M707.32 498.4 a320.03 320.03 0 1 0 640.06 0 a320.03 320.03 0 1 0 -640.06 0z' fill='rgba(28%2c 83%2c 142%2c 0.4)' class='triangle-float1'%3e%3c/path%3e%3cpath d='M530.54 22.22 a222.3 222.3 0 1 0 444.6 0 a222.3 222.3 0 1 0 -444.6 0z' fill='rgba(28%2c 83%2c 142%2c 0.4)' class='triangle-float3'%3e%3c/path%3e%3cpath d='M1433.7527229315072 809.502559498181L1602.9762012351955 824.3076954521788 1617.7813371891934 655.0842171484903 1448.557858885505 640.2790811944925z' fill='rgba(28%2c 83%2c 142%2c 0.4)' class='triangle-float1'%3e%3c/path%3e%3cpath d='M275.05832075929396 729.5293215671011L89.12481518466247 832.3624245389117 246.63886321838964 930.7881256503615z' fill='rgba(28%2c 83%2c 142%2c 0.4)' class='triangle-float3'%3e%3c/path%3e%3cpath d='M1150.37 51.02 a358.72 358.72 0 1 0 717.44 0 a358.72 358.72 0 1 0 -717.44 0z' fill='rgba(28%2c 83%2c 142%2c 0.4)' class='triangle-float2'%3e%3c/path%3e%3cpath d='M868.42 696.89 a246.99 246.99 0 1 0 493.98 0 a246.99 246.99 0 1 0 -493.98 0z' fill='rgba(28%2c 83%2c 142%2c 0.4)' class='triangle-float3'%3e%3c/path%3e%3cpath d='M1276.1912216953476 828.4522907652437L1108.6807288225348 672.2462290749904 952.4746671322814 839.7567219478033 1119.9851600050943 995.9627836380566z' fill='rgba(28%2c 83%2c 142%2c 0.4)' class='triangle-float2'%3e%3c/path%3e%3cpath d='M1510.42 410.18 a205.48 205.48 0 1 0 410.96 0 a205.48 205.48 0 1 0 -410.96 0z' fill='rgba(28%2c 83%2c 142%2c 0.4)' class='triangle-float3'%3e%3c/path%3e%3cpath d='M1177.57 393.88 a214.2 214.2 0 1 0 428.4 0 a214.2 214.2 0 1 0 -428.4 0z' fill='rgba(28%2c 83%2c 142%2c 0.4)' class='triangle-float3'%3e%3c/path%3e%3cpath d='M55.998413622973786 124.02930852361635L-66.8823928889033 238.61751439270472 47.70581298018509 361.4983209045818 170.58661949206217 246.91011503549345z' fill='rgba(28%2c 83%2c 142%2c 0.4)' class='triangle-float3'%3e%3c/path%3e%3cpath d='M177.43773263152377 567.1247407354592L295.97282499898694 718.8427403324272 447.6908245959549 600.307647964964 329.15573222849173 448.58964836799606z' fill='rgba(28%2c 83%2c 142%2c 0.4)' class='triangle-float2'%3e%3c/path%3e%3cpath d='M581.3037438614333 191.0478981282011L375.34735698313614-1.0095397222157203 183.28991913271932 204.94684715608147 389.2463060110165 397.0042850064983z' fill='rgba(28%2c 83%2c 142%2c 0.4)' class='triangle-float2'%3e%3c/path%3e%3cpath d='M1331.930866793882 40.309919383292424L1441.3285952816705 196.54606726524264 1620.9839528607015-45.6685994074154z' fill='rgba(28%2c 83%2c 142%2c 0.4)' class='triangle-float3'%3e%3c/path%3e%3cpath d='M423.9453946432687 441.7065314316617L679.0673281832815 505.3155736026837 742.6763703543033 250.1936400626709 487.5544368142907 186.58459789164894z' fill='rgba(28%2c 83%2c 142%2c 0.4)' class='triangle-float3'%3e%3c/path%3e%3cpath d='M715.7342212764953 631.9476868937022L845.6270420406026 887.4784395076526 985.7479290910286 679.7406814933086z' fill='rgba(28%2c 83%2c 142%2c 0.4)' class='triangle-float1'%3e%3c/path%3e%3c/g%3e%3cdefs%3e%3cmask id='SvgjsMask1078'%3e%3crect width='1920' height='1080' fill='white'%3e%3c/rect%3e%3c/mask%3e%3cstyle%3e %40keyframes float1 %7b 0%25%7btransform: translate(0%2c 0)%7d 50%25%7btransform: translate(-10px%2c 0)%7d 100%25%7btransform: translate(0%2c 0)%7d %7d .triangle-float1 %7b animation: float1 5s infinite%3b %7d %40keyframes float2 %7b 0%25%7btransform: translate(0%2c 0)%7d 50%25%7btransform: translate(-5px%2c -5px)%7d 100%25%7btransform: translate(0%2c 0)%7d %7d .triangle-float2 %7b animation: float2 4s infinite%3b %7d %40keyframes float3 %7b 0%25%7btransform: translate(0%2c 0)%7d 50%25%7btransform: translate(0%2c -10px)%7d 100%25%7btransform: translate(0%2c 0)%7d %7d .triangle-float3 %7b animation: float3 6s infinite%3b %7d %3c/style%3e%3c/defs%3e%3c/svg%3e");
+        }
+  
+
+        .container {
+            background-color: white;
+            padding: 40px;
+            border-radius: 10px;
+            box-shadow: 5px 5px 10px rgba(0, 0, 0, 0.36);
+            max-width: 400px;
+            width: 100%;
+            text-align: center;
+        }
+
+        input[type="text"] {
+            width: 100%;
+            padding: 10px;
+            border: 1px solid #ccc;
+            border-radius: 5px;
+            font-size: 16px;
+            margin-bottom: 20px;
+            outline: none;
+            transition: all 0.3s ease;
+        }
+
+        input[type="text"]:focus {
+            border-color: #007bff;
+        }
+
+        .btn {
+            background: linear-gradient(to right, #141e30, #243b55);
+            color: white;
+            border: none;
+            padding: 20px 20px;
+            text-align: center;
+            text-transform: uppercase;
+            letter-spacing: 1px;
+            font-size: 12px;
+            font-weight: bold;
+            border-radius: 20px;
+            box-shadow: 0px 15px 20px rgba(0, 0, 0, 0.1);
+            transition: all 0.3s ease 0s;
+            cursor: pointer;
+            margin: 10px;
+        }
+
+        .btn:hover {
+            background-color: #fff;
+            color: #000;
+            transform: translateY(-7px);
+        }
+
+        .result {
+            background-color: #f8f9fa;
+            padding: 15px;
+            border-radius: 5px;
+            margin-top: 20px;
+            font-size: 16px;
+            color: #333;
+        }
+    </style>
+</head>
+<body>
+
+<div class="container">
+    <h1>Criptografia Romana com ASCII</h1>
+    <input type="text" id="senhaInput" placeholder="Digite sua senha aqui">
+    <br>
+    <button class="btn" onclick="criptografar()">Criptografar</button><br>
+    <button class="btn" onclick="descriptografar()">Descriptografar</button>
+    
+    <div id="resultado" class="result"></div>
+    <footer>
+        <p>&copy; JoaoPeverada</p>
+    </footer>
+</div>
+
+
+<script>
+    // Função que converte um número inteiro para seu equivalente em algarismos romanos.
+    function inteiroParaRomano(numero) {
+        var valores = [1000, 900, 500, 400, 100, 90, 50, 40, 10, 9, 5, 4, 1];
+        var simbolos = ["M", "CM", "D", "CD", "C", "XC", "L", "XL", "X", "IX", "V", "IV", "I"];
+        var numeroRomano = '';
+        var i = 0;
+
+        // Converte o número para algarismo romano
+        while (numero > 0) {
+            while (numero >= valores[i]) {
+                numeroRomano += simbolos[i];
+                numero -= valores[i];
+            }
+            i++;
+        }
+        return numeroRomano;
+    }
+
+    // Função para criptografar a senha.
+    function criptografar() {
+        var senha = document.getElementById("senhaInput").value;  // Pega o valor digitado no campo de entrada.
+        var senhaCriptografada = "";  // Variável para armazenar o resultado criptografado.
+
+        // Itera sobre cada caractere da senha
+        for (var caractere of senha) {
+            var codigoAscii = caractere.charCodeAt(0);  // Obtém o valor ASCII do caractere.
+            senhaCriptografada += inteiroParaRomano(codigoAscii) + " ";  // Concatena o valor romano correspondente ao ASCII.
+        }
+
+        document.getElementById("resultado").innerText = "Senha Criptografada: " + senhaCriptografada.trim();
+    }
+
+    // Função para descriptografar a senha.
+    function descriptografar() {
+        var senhaCriptografada = document.getElementById("senhaInput").value;  // Pega a senha criptografada digitada.
+        var senhaDescriptografada = "";  // Variável para armazenar o resultado descriptografado.
+        var numerosRomanos = senhaCriptografada.split(' ');  // Divide a senha em números romanos.
+
+        // Itera sobre cada número romano na string
+        for (var numeroRomano of numerosRomanos) {
+            var numeroAscii = romanoParaInteiro(numeroRomano);  // Converte o número romano para ASCII.
+            senhaDescriptografada += String.fromCharCode(numeroAscii);  // Converte o valor ASCII de volta para o caractere.
+        }
+
+        document.getElementById("resultado").innerText = "Senha Descriptografada: " + senhaDescriptografada;
+    }
+
+    // Função que converte um número romano para um número inteiro.
+    function romanoParaInteiro(romano) {
+        var romanoParaValor = { 'I': 1, 'V': 5, 'X': 10, 'L': 50, 'C': 100, 'D': 500, 'M': 1000 };
+        var total = 0;
+        var valorAnterior = 0;
+
+        // Percorre o algarismo romano de trás para frente
+        for (var simbolo of romano.split('').reverse()) {
+            var valor = romanoParaValor[simbolo];
+            if (valor < valorAnterior) {
+                total -= valor;
+            } else {
+                total += valor;
+            }
+            valorAnterior = valor;
+        }
+        return total;
+    }
+</script>
+
+</body>
+</html>
